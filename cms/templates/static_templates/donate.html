@@ -1,0 +1,26 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Donate")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+<head>
+<style>
+p {
+line-height: 1.5;
+}
+            
+</style>
+</head>    
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Donate")}</%block>
+        </h1>
+        <p>
+            We are in the process of setting up our systems and processes to receive, administrate and report on public donations efficiently and effectively.
+            If you have any questions, please do get in touch with us.
+        </p>
+        <p>Email: contact@3imoox.org</p>
+    </section>
+</main>
